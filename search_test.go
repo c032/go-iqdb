@@ -21,6 +21,8 @@ func TestSearchURL(t *testing.T) {
 	for _, match := range matches {
 		if match.URL == "https://yande.re/post/show/994641" && match.Similarity >= 0.9 {
 			found = true
+
+			break
 		}
 	}
 	if !found {
